@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>
+            Calorie Counter
+        </h1>
+        <div class="counter">
+            <form action="" id="calorie-counter">
+                Budget
+                <label for="budget">Budget</label>
+                <input type="text" id="budget" min="0" placeholder="'Daily calorie budget" required>
+                <fieldset id="breakfast">
+                    <legend>Breakfast</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <fieldset id='lunch'>
+                    <legend>
+                    Lunch <div class='input-container'></div>
+                    </legend>
+                </fieldset>
+                <fieldset id='dinner'>
+                    <legend>
+                    Dinner <div class='input-container'></div>
+                    </legend>
+                </fieldset>
+                <fieldset id="snacks">
+                    <legend>
+                        Snacks <div class="input-container"></div>
+                    </legend>
+                </fieldset>
+                <fieldset id="Exercise">
+                    <legend>
+                        Exercise <div class="input-container"></div>
+                    </legend>
+                </fieldset>
+                <div class="controls">
+                    <span>
+                        <label for="entry-dropdown">Add food or exercise:</label>
+                        <select name="entry-dropdown" id="entry-dropdown">
+                            <option value="breakfast" selected>Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="snacks">Snacks</option>
+                            <option value="exercise">Exercise</option>
+                        </select>
+                        <button type="button" id="add-entry">Add Entry</button>
+                    </span>
+                </div>
+                <div>
+                    <button type="submit">Calculate Remaining Calories</button>
+                    <button id="clear" type="button">Clear</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
